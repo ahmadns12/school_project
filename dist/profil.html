@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts School | Profil</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Quicksand", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <!-- Font-end -->
+</head>
+<body>
+    <div>
+        <!-- Navbar -->
+        <div class="w-full fixed top-0 px-8 bg-[#4E1F00] text-white grid grid-cols-2">
+            <div class="py-3">
+                <img class="w-[2.50rem]" src="../src/img/logo.png" >
+            </div>
+            <div class="flex items-center justify-end w-full">
+                <ul class="flex gap-12 font-bold">
+                    <li>
+                        <a class="transition-all hover:text-[#A86523]" href="./index.html">Beranda</a>
+                    </li>
+                    <li class="text-[#A86523]">
+                        <a class="transition-all hover:text-[#A86523]" href="./profil.html">Profil</a>
+                    </li>
+                    <li>
+                        <a class="transition-all hover:text-[#A86523]" href="./program.html">Program</a>
+                    </li>
+                    <li>
+                        <a class="transition-all hover:text-[#A86523]" href="./kontak.html">Kontak</a>
+                    </li>
+                    <li>
+                        <a class="transition-all hover:text-[#A86523]" href="./aboutus.html">Tentang Kita</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Navbar-end -->
+
+        <!-- Content -->
+        <div class="w-full mt-24 px-8 grid">
+            <!-- Section -->
+            <div class="w-full grid border border-[#4E1F00]">
+                <div class="grid grid-cols-2 p-2 border border-t-0 border-l-0 border-r-0 border-b-[#4E1F00]">
+                    <div class="font-bold text-2xl text-[#A86523]">
+                        Profil
+                    </div>
+                    <div class="flex justify-end items-center">
+                        <img onclick="toggleDescription(this)" class="h-4 cursor-pointer" src="../src/img/dropdown.png" alt="">
+                    </div>
+                </div>
+                <div class="description text-lg overflow-hidden transition-all duration-300 ease-in-out max-h-[1000px]">
+                    <div class="p-2">
+                        • Nama: Hogwarts School of Witchcraft and Wizardry <br>
+                        • Lokasi: Skotlandia <br>
+                        • Didirikan: Lebih dari seribu tahun yang lalu <br>
+                        • Pendiri: Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw, Salazar Slytherin. <br>
+                        • Rumah: Gryffindor, Hufflepuff, Ravenclaw, Slytherin. <br>
+                        • Kepala Sekolah: Albus Dumbledore, Severus Snape. <br>
+                        • Mata Pelajaran: Pertahanan Terhadap Ilmu Hitam, Ramuan, Transfigurasi. <br>
+                        • Signifikansi: Tempat pendidikan penyihir muda dan simbol persahabatan serta perjuangan melawan kejahatan.
+                    </div>
+                </div>
+            </div>
+            <!-- Section-end -->
+
+            <!-- Section -->
+            <div class="w-full grid mt-8 border border-[#4E1F00]">
+                <div class="grid grid-cols-2 p-2 border border-t-0 border-l-0 border-r-0 border-b-[#4E1F00]">
+                    <div class="font-bold text-2xl text-[#A86523]">
+                        Sejarah Singkat
+                    </div>
+                    <div class="flex justify-end items-center">
+                        <img onclick="toggleDescription(this)" class="h-4 cursor-pointer" src="../src/img/dropdown.png" alt="">
+                    </div>
+                </div>
+                <div class="description text-lg overflow-hidden transition-all duration-300 ease-in-out max-h-[1000px]">
+                    <div class="p-2">
+                        Hogwarts School of Witchcraft and Wizardry adalah sekolah sihir. Sekolah ini didirikan 
+                        oleh empat penyihir hebat: Godric Gryffindor, Salazar Slytherin, Rowena Ravenclaw, dan Helga Hufflepuff <br> <br>
+
+                        Berikut adalah ringkasan sejarah Hogwarts <br>
+                        Pendirian: Hogwarts didirikan lebih dari seribu tahun yang lalu oleh empat penyihir terkenal: 
+                        Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw, dan Salazar Slytherin. Masing-masing pendiri 
+                        mendirikan rumah yang dinamai sesuai dengan nama mereka, yang mencerminkan nilai dan 
+                        karakteristik yang mereka hargai. <br> <br>
+
+                        Rumah-Rumah: Setiap rumah di Hogwarts memiliki ciri khasnya sendiri: <br>
+                        • Gryffindor: Dikenal karena keberanian dan keberanian. <br>
+                        • Hufflepuff: Dikenal karena kerja keras dan kesetiaan. <br>
+                        • Ravenclaw: Dikenal karena kecerdasan dan kebijaksanaan. <br>
+                        • Slytherin: Dikenal karena ambisi dan kecerdikan <br>
+                    </div>
+                </div>
+            </div>
+            <!-- Section-end -->
+
+            <!-- Section -->            
+            <div class="w-full grid mt-8 border border-[#4E1F00]">
+                <div class="grid grid-cols-2 p-2 border border-t-0 border-l-0 border-r-0 border-b-[#4E1F00]">
+                    <div class="font-bold text-2xl text-[#A86523]">
+                        Visi & Misi
+                    </div>
+                    <div class="flex justify-end items-center">
+                        <img onclick="toggleDescription(this)" class="h-4 cursor-pointer" src="../src/img/dropdown.png" alt="">
+                    </div>
+                </div>
+                <div class="description text-lg overflow-hidden transition-all duration-300 ease-in-out max-h-[1000px]">
+                    <div class="p-2">
+                        Visi <br>
+                        Menjadi lembaga pendidikan sihir terkemuka yang mengembangkan penyihir dan penyihir muda yang berbakat, 
+                        beretika, dan berani, serta mempromosikan persahabatan dan kerjasama di antara semua penyihir. <br> <br>
+
+                        Misi <br>
+                        1. Pendidikan Berkualitas: Menyediakan pendidikan sihir yang komprehensif dan berkualitas tinggi dalam berbagai disiplin ilmu sihir. <br>
+                        2. Pengembangan Karakter: Mendorong pengembangan karakter siswa melalui nilai-nilai keberanian, kerja keras, kecerdasan, dan ambisi yang positif. <br>
+                        3. Inklusi: Menerima dan menghargai semua penyihir, terlepas dari latar belakang mereka, dan menciptakan lingkungan yang inklusif dan mendukung. <br>
+                        4. Keberanian Melawan Kejahatan: Mempersiapkan siswa untuk menghadapi tantangan dan melawan kejahatan, serta mengajarkan pentingnya moralitas dan etika dalam penggunaan sihir. <br>
+                        5. Persahabatan dan Kerjasama: Membangun hubungan yang kuat antara siswa dari berbagai rumah dan latar belakang, serta mempromosikan kerja sama dalam mencapai tujuan bersama. <br>
+                    </div>
+                </div>
+            </div>
+            <!-- Section-end -->
+        </div>
+        <!-- Content-end -->
+
+        <!-- Footer -->
+        <div class="mt-16 mb-10 flex justify-center italic text-gray-300 items-center">
+            Copyright @2025 Hogwartas Student
+        </div>
+        <!-- Footer-end -->
+    </div>
+
+    <!-- Javascript -->
+    <script>
+        // Fungsi slide down/up 
+        function toggleDescription(img) {
+            const desc = img.closest('div.grid').nextElementSibling;
+
+            if (desc && desc.classList.contains('description')) {
+                if (desc.classList.contains('max-h-0')) {
+                    desc.classList.remove('max-h-0');
+                    desc.classList.add('max-h-[1000px]');
+                } else {
+                    desc.classList.remove('max-h-[1000px]');
+                    desc.classList.add('max-h-0');
+                }
+            }
+        }
+    </script>
+    <!-- Javascript -->
+</body>
+</html>
